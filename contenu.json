@@ -1,0 +1,1449 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-02-14T01:32:52",
+  "currency": "EUR",
+  "notes": [
+    "Base MVP : prix repères indicatifs (type discount). Ajuster ensuite par enseigne, région, saison.",
+    "Les catégories servent à la Barre Équilibre (invisible) et au remplacement 1‑clic."
+  ],
+  "food_items": [
+    {
+      "id": "oeufs",
+      "nom": "Œufs",
+      "categorie": "proteine",
+      "prix_repere": 2.5,
+      "unite": "12 œufs",
+      "tags": [
+        "rapide",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Satiété + énergie stable",
+      "equivalents": [
+        "thon_conserve",
+        "sardines",
+        "dinde",
+        "tofu"
+      ]
+    },
+    {
+      "id": "blanc_poulet",
+      "nom": "Blanc de poulet",
+      "categorie": "proteine",
+      "prix_repere": 8.0,
+      "unite": "1 kg",
+      "tags": [
+        "viande",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Répare le corps",
+      "equivalents": [
+        "dinde",
+        "cuisses_poulet",
+        "oeufs",
+        "thon_conserve"
+      ]
+    },
+    {
+      "id": "cuisses_poulet",
+      "nom": "Cuisses de poulet",
+      "categorie": "proteine",
+      "prix_repere": 5.5,
+      "unite": "1.2 kg",
+      "tags": [
+        "viande",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Rassasie longtemps",
+      "equivalents": [
+        "blanc_poulet",
+        "dinde",
+        "oeufs",
+        "thon_conserve"
+      ]
+    },
+    {
+      "id": "dinde",
+      "nom": "Dinde",
+      "categorie": "proteine",
+      "prix_repere": 7.0,
+      "unite": "1 kg",
+      "tags": [
+        "viande",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Protéines maigres",
+      "equivalents": [
+        "blanc_poulet",
+        "cuisses_poulet",
+        "oeufs",
+        "tofu"
+      ]
+    },
+    {
+      "id": "steak_hache",
+      "nom": "Steak haché",
+      "categorie": "proteine",
+      "prix_repere": 9.0,
+      "unite": "1 kg",
+      "tags": [
+        "viande",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Force musculaire",
+      "equivalents": [
+        "blanc_poulet",
+        "dinde",
+        "tofu",
+        "thon_conserve"
+      ]
+    },
+    {
+      "id": "thon_conserve",
+      "nom": "Thon (conserve)",
+      "categorie": "proteine",
+      "prix_repere": 7.0,
+      "unite": "8 boîtes",
+      "tags": [
+        "poisson",
+        "rapide",
+        "sans_porc"
+      ],
+      "exclusions": [
+        "fruits_de_mer"
+      ],
+      "role": "Énergie + satiété",
+      "equivalents": [
+        "sardines",
+        "maquereau",
+        "colin",
+        "oeufs"
+      ]
+    },
+    {
+      "id": "sardines",
+      "nom": "Sardines",
+      "categorie": "proteine",
+      "prix_repere": 6.0,
+      "unite": "6 boîtes",
+      "tags": [
+        "poisson",
+        "sans_porc"
+      ],
+      "exclusions": [
+        "fruits_de_mer"
+      ],
+      "role": "Oméga‑3 + satiété",
+      "equivalents": [
+        "maquereau",
+        "thon_conserve",
+        "oeufs",
+        "colin"
+      ]
+    },
+    {
+      "id": "maquereau",
+      "nom": "Maquereau",
+      "categorie": "proteine",
+      "prix_repere": 6.0,
+      "unite": "6 boîtes",
+      "tags": [
+        "poisson",
+        "sans_porc"
+      ],
+      "exclusions": [
+        "fruits_de_mer"
+      ],
+      "role": "Riche en oméga‑3",
+      "equivalents": [
+        "sardines",
+        "thon_conserve",
+        "colin",
+        "oeufs"
+      ]
+    },
+    {
+      "id": "colin",
+      "nom": "Colin",
+      "categorie": "proteine",
+      "prix_repere": 7.0,
+      "unite": "1 kg",
+      "tags": [
+        "poisson",
+        "sans_porc"
+      ],
+      "exclusions": [
+        "fruits_de_mer"
+      ],
+      "role": "Léger et nourrissant",
+      "equivalents": [
+        "thon_conserve",
+        "sardines",
+        "maquereau",
+        "dinde"
+      ]
+    },
+    {
+      "id": "fromage_blanc",
+      "nom": "Fromage blanc",
+      "categorie": "proteine",
+      "prix_repere": 2.0,
+      "unite": "1 kg",
+      "tags": [
+        "laitier",
+        "rapide"
+      ],
+      "exclusions": [
+        "fromage"
+      ],
+      "role": "Coupe la faim",
+      "equivalents": [
+        "skyr",
+        "yaourt_nature",
+        "oeufs"
+      ]
+    },
+    {
+      "id": "yaourt_nature",
+      "nom": "Yaourt nature",
+      "categorie": "proteine",
+      "prix_repere": 2.0,
+      "unite": "8 pots",
+      "tags": [
+        "laitier"
+      ],
+      "exclusions": [
+        "fromage"
+      ],
+      "role": "Digestion + protéines",
+      "equivalents": [
+        "skyr",
+        "fromage_blanc",
+        "oeufs"
+      ]
+    },
+    {
+      "id": "skyr",
+      "nom": "Skyr",
+      "categorie": "proteine",
+      "prix_repere": 3.0,
+      "unite": "4 pots",
+      "tags": [
+        "laitier",
+        "rapide"
+      ],
+      "exclusions": [
+        "fromage"
+      ],
+      "role": "Protéines denses",
+      "equivalents": [
+        "fromage_blanc",
+        "yaourt_nature"
+      ]
+    },
+    {
+      "id": "tofu",
+      "nom": "Tofu",
+      "categorie": "proteine",
+      "prix_repere": 3.0,
+      "unite": "400 g",
+      "tags": [
+        "vegetarien",
+        "sans_porc"
+      ],
+      "exclusions": [],
+      "role": "Alternative végétale",
+      "equivalents": [
+        "oeufs",
+        "dinde",
+        "lentilles"
+      ]
+    },
+    {
+      "id": "lentilles",
+      "nom": "Lentilles",
+      "categorie": "fibre",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Énergie longue + fibres",
+      "equivalents": [
+        "pois_chiches",
+        "haricots_rouges",
+        "haricots_blancs",
+        "pois_casses"
+      ]
+    },
+    {
+      "id": "pois_chiches",
+      "nom": "Pois chiches",
+      "categorie": "fibre",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Satiété + fibres",
+      "equivalents": [
+        "lentilles",
+        "haricots_rouges",
+        "haricots_blancs"
+      ]
+    },
+    {
+      "id": "haricots_rouges",
+      "nom": "Haricots rouges",
+      "categorie": "fibre",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Satiété + fibres",
+      "equivalents": [
+        "haricots_blancs",
+        "pois_chiches",
+        "lentilles"
+      ]
+    },
+    {
+      "id": "haricots_blancs",
+      "nom": "Haricots blancs",
+      "categorie": "fibre",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Fibres + digestion",
+      "equivalents": [
+        "haricots_rouges",
+        "pois_chiches",
+        "lentilles"
+      ]
+    },
+    {
+      "id": "pois_casses",
+      "nom": "Pois cassés",
+      "categorie": "fibre",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Énergie stable + fibres",
+      "equivalents": [
+        "lentilles",
+        "pois_chiches",
+        "haricots_blancs"
+      ]
+    },
+    {
+      "id": "flocons_avoine",
+      "nom": "Flocons d’avoine",
+      "categorie": "energie",
+      "prix_repere": 1.5,
+      "unite": "1 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Énergie stable + fibres",
+      "equivalents": [
+        "pain_complet",
+        "pommes_de_terre",
+        "riz_complet"
+      ]
+    },
+    {
+      "id": "riz_blanc",
+      "nom": "Riz blanc",
+      "categorie": "energie",
+      "prix_repere": 1.8,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie simple",
+      "equivalents": [
+        "pates",
+        "semoule",
+        "pommes_de_terre"
+      ]
+    },
+    {
+      "id": "riz_complet",
+      "nom": "Riz complet",
+      "categorie": "energie",
+      "prix_repere": 2.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie plus stable",
+      "equivalents": [
+        "riz_blanc",
+        "quinoa",
+        "pain_complet"
+      ]
+    },
+    {
+      "id": "pates",
+      "nom": "Pâtes",
+      "categorie": "energie",
+      "prix_repere": 1.6,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie",
+      "equivalents": [
+        "riz_blanc",
+        "semoule",
+        "pommes_de_terre"
+      ]
+    },
+    {
+      "id": "semoule",
+      "nom": "Semoule",
+      "categorie": "energie",
+      "prix_repere": 1.5,
+      "unite": "1 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Rapide à préparer",
+      "equivalents": [
+        "pates",
+        "riz_blanc",
+        "pommes_de_terre"
+      ]
+    },
+    {
+      "id": "pommes_de_terre",
+      "nom": "Pommes de terre",
+      "categorie": "energie",
+      "prix_repere": 2.0,
+      "unite": "2 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Satiété",
+      "equivalents": [
+        "patate_douce",
+        "riz_blanc",
+        "pates"
+      ]
+    },
+    {
+      "id": "patate_douce",
+      "nom": "Patate douce",
+      "categorie": "energie",
+      "prix_repere": 3.0,
+      "unite": "1.5 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie durable",
+      "equivalents": [
+        "pommes_de_terre",
+        "riz_complet",
+        "quinoa"
+      ]
+    },
+    {
+      "id": "pain_complet",
+      "nom": "Pain complet",
+      "categorie": "energie",
+      "prix_repere": 2.2,
+      "unite": "1 pain",
+      "tags": [],
+      "exclusions": [],
+      "role": "Coupe faim",
+      "equivalents": [
+        "flocons_avoine",
+        "riz_complet"
+      ]
+    },
+    {
+      "id": "pain_blanc",
+      "nom": "Pain blanc",
+      "categorie": "energie",
+      "prix_repere": 1.5,
+      "unite": "1 pain",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie simple",
+      "equivalents": [
+        "pates",
+        "riz_blanc"
+      ]
+    },
+    {
+      "id": "quinoa",
+      "nom": "Quinoa",
+      "categorie": "energie",
+      "prix_repere": 4.0,
+      "unite": "500 g",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Énergie + minéraux",
+      "equivalents": [
+        "riz_complet",
+        "riz_blanc"
+      ]
+    },
+    {
+      "id": "carottes",
+      "nom": "Carottes",
+      "categorie": "legume",
+      "prix_repere": 1.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Vitamines",
+      "equivalents": [
+        "poivrons",
+        "tomates",
+        "brocolis"
+      ]
+    },
+    {
+      "id": "oignons",
+      "nom": "Oignons",
+      "categorie": "legume",
+      "prix_repere": 1.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Immunité",
+      "equivalents": [
+        "poireaux",
+        "ail",
+        "tomates"
+      ]
+    },
+    {
+      "id": "ail",
+      "nom": "Ail",
+      "categorie": "legume",
+      "prix_repere": 1.0,
+      "unite": "1 tête",
+      "tags": [],
+      "exclusions": [],
+      "role": "Protection",
+      "equivalents": [
+        "oignons",
+        "poireaux"
+      ]
+    },
+    {
+      "id": "poireaux",
+      "nom": "Poireaux",
+      "categorie": "legume",
+      "prix_repere": 2.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Digestion",
+      "equivalents": [
+        "oignons",
+        "epinards",
+        "brocolis"
+      ]
+    },
+    {
+      "id": "courgettes",
+      "nom": "Courgettes",
+      "categorie": "legume",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Équilibre",
+      "equivalents": [
+        "haricots_verts",
+        "brocolis",
+        "poivrons"
+      ]
+    },
+    {
+      "id": "poivrons",
+      "nom": "Poivrons",
+      "categorie": "legume",
+      "prix_repere": 3.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Anti‑fatigue",
+      "equivalents": [
+        "carottes",
+        "tomates",
+        "brocolis"
+      ]
+    },
+    {
+      "id": "brocolis",
+      "nom": "Brocolis",
+      "categorie": "legume",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Récupération",
+      "equivalents": [
+        "epinards",
+        "haricots_verts",
+        "legumes_surgeles"
+      ]
+    },
+    {
+      "id": "epinards",
+      "nom": "Épinards",
+      "categorie": "legume",
+      "prix_repere": 2.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Fer naturel",
+      "equivalents": [
+        "brocolis",
+        "haricots_verts",
+        "legumes_surgeles"
+      ]
+    },
+    {
+      "id": "haricots_verts",
+      "nom": "Haricots verts",
+      "categorie": "legume",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Satiété",
+      "equivalents": [
+        "brocolis",
+        "epinards",
+        "legumes_surgeles"
+      ]
+    },
+    {
+      "id": "tomates",
+      "nom": "Tomates",
+      "categorie": "legume",
+      "prix_repere": 2.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Hydratation",
+      "equivalents": [
+        "sauce_tomate",
+        "carottes",
+        "poivrons"
+      ]
+    },
+    {
+      "id": "salade_verte",
+      "nom": "Salade verte",
+      "categorie": "legume",
+      "prix_repere": 1.8,
+      "unite": "1 salade",
+      "tags": [],
+      "exclusions": [],
+      "role": "Fraîcheur",
+      "equivalents": [
+        "carottes",
+        "tomates"
+      ]
+    },
+    {
+      "id": "legumes_surgeles",
+      "nom": "Légumes surgelés",
+      "categorie": "legume",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Gain de temps",
+      "equivalents": [
+        "brocolis",
+        "haricots_verts",
+        "epinards"
+      ]
+    },
+    {
+      "id": "poelee_legumes",
+      "nom": "Poêlée de légumes",
+      "categorie": "legume",
+      "prix_repere": 3.0,
+      "unite": "1 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Équilibre facile",
+      "equivalents": [
+        "legumes_surgeles",
+        "brocolis"
+      ]
+    },
+    {
+      "id": "sauce_tomate",
+      "nom": "Sauce tomate",
+      "categorie": "legume",
+      "prix_repere": 1.5,
+      "unite": "500 g",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Base repas",
+      "equivalents": [
+        "coulis_tomate",
+        "tomates"
+      ]
+    },
+    {
+      "id": "coulis_tomate",
+      "nom": "Coulis de tomate",
+      "categorie": "legume",
+      "prix_repere": 1.5,
+      "unite": "500 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Base repas",
+      "equivalents": [
+        "sauce_tomate",
+        "tomates"
+      ]
+    },
+    {
+      "id": "huile_colza",
+      "nom": "Huile de colza",
+      "categorie": "lipide",
+      "prix_repere": 2.0,
+      "unite": "1 bouteille",
+      "tags": [],
+      "exclusions": [],
+      "role": "Équilibre hormonal",
+      "equivalents": [
+        "huile_olive",
+        "graines_lin",
+        "noix"
+      ]
+    },
+    {
+      "id": "huile_olive",
+      "nom": "Huile d’olive",
+      "categorie": "lipide",
+      "prix_repere": 4.0,
+      "unite": "1 bouteille",
+      "tags": [],
+      "exclusions": [],
+      "role": "Protection",
+      "equivalents": [
+        "huile_colza"
+      ]
+    },
+    {
+      "id": "noix",
+      "nom": "Noix",
+      "categorie": "lipide",
+      "prix_repere": 5.0,
+      "unite": "200 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Cerveau",
+      "equivalents": [
+        "amandes",
+        "graines_lin"
+      ]
+    },
+    {
+      "id": "amandes",
+      "nom": "Amandes",
+      "categorie": "lipide",
+      "prix_repere": 5.0,
+      "unite": "200 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Énergie durable",
+      "equivalents": [
+        "noix",
+        "graines_lin"
+      ]
+    },
+    {
+      "id": "graines_lin",
+      "nom": "Graines de lin",
+      "categorie": "lipide",
+      "prix_repere": 2.0,
+      "unite": "250 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Oméga‑3",
+      "equivalents": [
+        "huile_colza",
+        "noix"
+      ]
+    },
+    {
+      "id": "banane",
+      "nom": "Banane",
+      "categorie": "energie",
+      "prix_repere": 2.0,
+      "unite": "1.5 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Énergie rapide",
+      "equivalents": [
+        "pomme",
+        "orange"
+      ]
+    },
+    {
+      "id": "pomme",
+      "nom": "Pomme",
+      "categorie": "energie",
+      "prix_repere": 2.5,
+      "unite": "1.5 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Coupe faim",
+      "equivalents": [
+        "banane",
+        "poire"
+      ]
+    },
+    {
+      "id": "orange",
+      "nom": "Orange",
+      "categorie": "energie",
+      "prix_repere": 2.5,
+      "unite": "1.5 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Vitamine C",
+      "equivalents": [
+        "clementines",
+        "kiwi"
+      ]
+    },
+    {
+      "id": "poire",
+      "nom": "Poire",
+      "categorie": "energie",
+      "prix_repere": 2.5,
+      "unite": "1.5 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Digestion",
+      "equivalents": [
+        "pomme",
+        "banane"
+      ]
+    },
+    {
+      "id": "clementines",
+      "nom": "Clémentines",
+      "categorie": "energie",
+      "prix_repere": 3.0,
+      "unite": "1.5 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Immunité",
+      "equivalents": [
+        "orange"
+      ]
+    },
+    {
+      "id": "kiwi",
+      "nom": "Kiwi",
+      "categorie": "energie",
+      "prix_repere": 3.0,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Anti‑fatigue",
+      "equivalents": [
+        "orange"
+      ]
+    },
+    {
+      "id": "fruits_surgeles",
+      "nom": "Fruits surgelés",
+      "categorie": "energie",
+      "prix_repere": 3.0,
+      "unite": "1 kg",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Vitamines pratiques",
+      "equivalents": [
+        "banane",
+        "pomme"
+      ]
+    },
+    {
+      "id": "lait",
+      "nom": "Lait",
+      "categorie": "proteine",
+      "prix_repere": 1.5,
+      "unite": "1 L",
+      "tags": [
+        "laitier"
+      ],
+      "exclusions": [
+        "fromage"
+      ],
+      "role": "Apport rapide",
+      "equivalents": [
+        "lait_vegetal",
+        "yaourt_nature"
+      ]
+    },
+    {
+      "id": "lait_vegetal",
+      "nom": "Lait végétal",
+      "categorie": "energie",
+      "prix_repere": 2.0,
+      "unite": "1 L",
+      "tags": [
+        "vegetarien"
+      ],
+      "exclusions": [],
+      "role": "Alternative",
+      "equivalents": [
+        "lait"
+      ]
+    },
+    {
+      "id": "beurre",
+      "nom": "Beurre",
+      "categorie": "lipide",
+      "prix_repere": 2.5,
+      "unite": "250 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Goût",
+      "equivalents": [
+        "margarine",
+        "huile_olive"
+      ]
+    },
+    {
+      "id": "margarine",
+      "nom": "Margarine",
+      "categorie": "lipide",
+      "prix_repere": 2.0,
+      "unite": "250 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Alternative",
+      "equivalents": [
+        "beurre"
+      ]
+    },
+    {
+      "id": "confiture",
+      "nom": "Confiture",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 pot",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "miel"
+      ]
+    },
+    {
+      "id": "miel",
+      "nom": "Miel",
+      "categorie": "plaisir",
+      "prix_repere": 3.0,
+      "unite": "1 pot",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "confiture"
+      ]
+    },
+    {
+      "id": "cereales_sucrees",
+      "nom": "Céréales sucrées",
+      "categorie": "plaisir",
+      "prix_repere": 2.5,
+      "unite": "1 boîte",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "biscuits"
+      ]
+    },
+    {
+      "id": "frites_surgeles",
+      "nom": "Frites surgelées",
+      "categorie": "plaisir",
+      "prix_repere": 2.5,
+      "unite": "1 kg",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "pommes_de_terre"
+      ]
+    },
+    {
+      "id": "cordon_bleu",
+      "nom": "Cordon bleu",
+      "categorie": "plaisir",
+      "prix_repere": 3.0,
+      "unite": "4 pièces",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [
+        "porc"
+      ],
+      "role": "Rapide",
+      "equivalents": [
+        "poulet_panure"
+      ]
+    },
+    {
+      "id": "steak_vegetal",
+      "nom": "Steak végétal",
+      "categorie": "proteine",
+      "prix_repere": 3.0,
+      "unite": "4 pièces",
+      "tags": [
+        "vegetarien",
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Alternative",
+      "equivalents": [
+        "tofu",
+        "oeufs"
+      ]
+    },
+    {
+      "id": "eau",
+      "nom": "Eau",
+      "categorie": "neutre",
+      "prix_repere": 0.0,
+      "unite": "—",
+      "tags": [],
+      "exclusions": [],
+      "role": "Hydratation",
+      "equivalents": [
+        "eau_gazeuse"
+      ]
+    },
+    {
+      "id": "eau_gazeuse",
+      "nom": "Eau gazeuse",
+      "categorie": "neutre",
+      "prix_repere": 1.0,
+      "unite": "6×1.5 L",
+      "tags": [],
+      "exclusions": [],
+      "role": "Hydratation",
+      "equivalents": [
+        "eau"
+      ]
+    },
+    {
+      "id": "jus_fruit",
+      "nom": "Jus de fruit",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 L",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "fruits_surgeles"
+      ]
+    },
+    {
+      "id": "soda",
+      "nom": "Soda",
+      "categorie": "plaisir",
+      "prix_repere": 1.5,
+      "unite": "1.5 L",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "eau_gazeuse"
+      ]
+    },
+    {
+      "id": "cafe",
+      "nom": "Café",
+      "categorie": "neutre",
+      "prix_repere": 2.0,
+      "unite": "250 g",
+      "tags": [],
+      "exclusions": [],
+      "role": "Éveil",
+      "equivalents": [
+        "the"
+      ]
+    },
+    {
+      "id": "the",
+      "nom": "Thé",
+      "categorie": "neutre",
+      "prix_repere": 2.0,
+      "unite": "1 boîte",
+      "tags": [],
+      "exclusions": [],
+      "role": "Léger",
+      "equivalents": [
+        "cafe"
+      ]
+    },
+    {
+      "id": "vinaigre",
+      "nom": "Vinaigre",
+      "categorie": "neutre",
+      "prix_repere": 1.0,
+      "unite": "1 bouteille",
+      "tags": [],
+      "exclusions": [],
+      "role": "Assaisonnement",
+      "equivalents": [
+        "epices"
+      ]
+    },
+    {
+      "id": "epices",
+      "nom": "Épices",
+      "categorie": "neutre",
+      "prix_repere": 2.0,
+      "unite": "1 lot",
+      "tags": [],
+      "exclusions": [],
+      "role": "Varier",
+      "equivalents": [
+        "vinaigre"
+      ]
+    },
+    {
+      "id": "mayonnaise",
+      "nom": "Mayonnaise",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 pot",
+      "tags": [],
+      "exclusions": [],
+      "role": "Goût",
+      "equivalents": [
+        "ketchup"
+      ]
+    },
+    {
+      "id": "ketchup",
+      "nom": "Ketchup",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 pot",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "mayonnaise"
+      ]
+    },
+    {
+      "id": "chocolat_noir",
+      "nom": "Chocolat noir",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 tablette",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "chocolat_lait",
+        "biscuits"
+      ]
+    },
+    {
+      "id": "chocolat_lait",
+      "nom": "Chocolat au lait",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 tablette",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "chocolat_noir",
+        "biscuits"
+      ]
+    },
+    {
+      "id": "biscuits",
+      "nom": "Biscuits",
+      "categorie": "plaisir",
+      "prix_repere": 2.0,
+      "unite": "1 paquet",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "chocolat_noir",
+        "glace"
+      ]
+    },
+    {
+      "id": "glace",
+      "nom": "Glace",
+      "categorie": "plaisir",
+      "prix_repere": 3.0,
+      "unite": "1 bac",
+      "tags": [],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "biscuits"
+      ]
+    },
+    {
+      "id": "pizza",
+      "nom": "Pizza",
+      "categorie": "plaisir",
+      "prix_repere": 4.0,
+      "unite": "1 pizza",
+      "tags": [
+        "rapide"
+      ],
+      "exclusions": [],
+      "role": "Plaisir",
+      "equivalents": [
+        "cordon_bleu"
+      ]
+    }
+  ],
+  "variant_templates": [
+    {
+      "id": "eco_malin",
+      "nom": "Éco malin",
+      "slots": [
+        "proteine",
+        "proteine",
+        "proteine",
+        "fibre",
+        "fibre",
+        "legume",
+        "legume",
+        "lipide",
+        "energie",
+        "energie",
+        "energie",
+        "legume"
+      ],
+      "must_have": [
+        "proteine",
+        "fibre",
+        "legume",
+        "lipide"
+      ],
+      "nice_to_have": [
+        "energie"
+      ],
+      "max_items": 12
+    },
+    {
+      "id": "confort_quotidien",
+      "nom": "Confort quotidien",
+      "slots": [
+        "proteine",
+        "proteine",
+        "proteine",
+        "fibre",
+        "legume",
+        "legume",
+        "legume",
+        "lipide",
+        "energie",
+        "energie",
+        "energie",
+        "proteine"
+      ],
+      "must_have": [
+        "proteine",
+        "fibre",
+        "legume",
+        "lipide"
+      ],
+      "nice_to_have": [
+        "energie",
+        "plaisir"
+      ],
+      "max_items": 12
+    },
+    {
+      "id": "rapide_pratique",
+      "nom": "Rapide pratique",
+      "slots": [
+        "proteine",
+        "proteine",
+        "proteine",
+        "fibre",
+        "legume",
+        "legume",
+        "lipide",
+        "energie",
+        "energie",
+        "proteine",
+        "legume",
+        "energie"
+      ],
+      "must_have": [
+        "proteine",
+        "fibre",
+        "legume",
+        "lipide"
+      ],
+      "nice_to_have": [
+        "energie"
+      ],
+      "max_items": 12
+    }
+  ],
+  "replacement_rules": [
+    {
+      "categorie": "proteine",
+      "prefer_order": [
+        "oeufs",
+        "cuisses_poulet",
+        "blanc_poulet",
+        "dinde",
+        "thon_conserve",
+        "sardines",
+        "colin",
+        "tofu",
+        "steak_hache"
+      ],
+      "fallback": [
+        "haricots_rouges"
+      ]
+    },
+    {
+      "categorie": "fibre",
+      "prefer_order": [
+        "lentilles",
+        "pois_chiches",
+        "haricots_rouges",
+        "haricots_blancs",
+        "pois_casses"
+      ],
+      "fallback": [
+        "flocons_avoine"
+      ]
+    },
+    {
+      "categorie": "legume",
+      "prefer_order": [
+        "carottes",
+        "oignons",
+        "brocolis",
+        "epinards",
+        "haricots_verts",
+        "legumes_surgeles",
+        "tomates",
+        "poivrons",
+        "salade_verte",
+        "poireaux"
+      ],
+      "fallback": [
+        "sauce_tomate"
+      ]
+    },
+    {
+      "categorie": "energie",
+      "prefer_order": [
+        "pommes_de_terre",
+        "flocons_avoine",
+        "riz_blanc",
+        "pates",
+        "semoule",
+        "riz_complet",
+        "pain_complet",
+        "patate_douce",
+        "quinoa"
+      ],
+      "fallback": [
+        "banane"
+      ]
+    },
+    {
+      "categorie": "lipide",
+      "prefer_order": [
+        "huile_colza",
+        "huile_olive",
+        "graines_lin",
+        "noix",
+        "amandes"
+      ],
+      "fallback": [
+        "huile_colza"
+      ]
+    },
+    {
+      "categorie": "plaisir",
+      "prefer_order": [
+        "chocolat_noir",
+        "chocolat_lait",
+        "biscuits",
+        "glace",
+        "pizza",
+        "soda"
+      ],
+      "fallback": [
+        "chocolat_noir"
+      ]
+    }
+  ],
+  "balance_model": {
+    "pillars": {
+      "proteine": {
+        "needed": 2,
+        "weight": 30
+      },
+      "fibre": {
+        "needed": 1,
+        "weight": 25
+      },
+      "legume": {
+        "needed": 2,
+        "weight": 25
+      },
+      "lipide": {
+        "needed": 1,
+        "weight": 20
+      }
+    }
+  }
+}
